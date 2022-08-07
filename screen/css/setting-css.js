@@ -120,20 +120,30 @@ export default StyleSheet.create({
 
   blantitle: {
     fontFamily: "Comfortaa-Bold",
-    fontSize: 15 ,
+    fontSize: 50,
+    marginHorizontal: 14
+  },
+
+  blanoo: {
+    marginTop: 16,
+    flexDirection : 'row' ,
+    justifyContent : 'flex-start',
+    alignItems: 'center'
   },
 
   blanksoil:{
-    marginTop: 22 ,
+    marginTop: 17 ,
     flexDirection: 'row',
     justifyContent: 'space-around',
     width: '100%',
   },
 
   blanttext:{
+    // backgroundColor: Color.C6 ,
+    borderRadius: 6 ,
     textAlign: 'center',
     marginTop: 20,
-    paddingHorizontal: 13,
+    padding: 13,
     color: Color.C4 ,
     fontFamily: "Comfortaa-Bold",
     fontSize: 12

@@ -8,9 +8,88 @@ export default StyleSheet.create({
 
   topbar: {
     backgroundColor: Color.C3 ,
-    height: 65 ,
+    marginLeft: -40
   },
-  text: {
-  }
+
+  container: {
+    marginVertical: 10 ,
+  },
+
+  //row 1 Start 
+  row1_box:{
+    marginHorizontal : 20 ,
+    flexDirection : 'row' ,
+    alignItems: 'center' ,
+    marginBottom: 2
+  },
+
+  icon_b: {
+    width: 35 ,
+    marginStart: 10,
+    marginVertical: 7 , 
+  },
+
+  row1 :{
+    marginHorizontal : 20 ,
+    borderRadius: 12 ,
+    backgroundColor: Color.C3,
+  },
+
+  card: {
+    backgroundColor: Color.C3,
+    height: 75 ,
+    borderRadius: 12 ,
+    padding : 16 ,
+    flexDirection : 'row' ,
+    justifyContent : 'space-evenly'
+  },
+
+  card_text: {
+    fontFamily: "Poppins-Regular",
+    marginHorizontal: 9 ,
+    fontSize: 11
+  },
+
+  iconv: {
+    width: 35 ,
+    marginStart: 10,
+    marginVertical: 7 , 
+  },
+
+  volm: {
+    width: 270 ,
+    height: 20,
+  },
+
+  add :{
+    marginHorizontal : 20 ,
+    borderRadius: 12 ,
+    marginBottom: 20 ,
+    backgroundColor: Color.C3,
+  },
+
+  add_card: {
+    backgroundColor: Color.C3,
+    height: 40 ,
+    borderRadius: 12 ,
+    padding : 10 ,
+    flexDirection : 'row' ,
+    justifyContent : 'space-evenly',
+  },
+
+  iconv: {
+    width: 35 ,
+    marginStart: 10,
+    marginVertical: 7 , 
+  },
+
+  fab: {
+    position: 'absolute',
+    margin: 16,
+    right: 0,
+    bottom: 0,
+    backgroundColor: Color.C4,
+  },
+
 
 });

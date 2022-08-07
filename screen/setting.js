@@ -63,15 +63,17 @@ const setting = ({navigation}) => {
 
      <View style={styles.card_4}>
       <Text style={styles.whohd}>EVOLVED FROM</Text>
+      <View style={styles.blanoo}>
      <Image style={styles.blanket} source={require('../assets/image/png/blanket/blanket.png')} />
      <Text style={styles.blantitle}>Blanket</Text>
-     <View style={styles.blanksoil}> 
-     <Button textColor={Color.C5} buttonColor={Color.C6} labelStyle={ {fontFamily: "Poppins-Regular", } } mode="contained-tonal" onPress={ ()=>{ Linking.openURL('https://github.com/rafaelmardojai/blanket')}} onLongPress={() => GithubToClipboard()} icon={() => (<Icon name="github-alt" style={{color:Color.C5}}  size={18} />)} >Github</Button>
-     <Button textColor={Color.C5} buttonColor={Color.C6} labelStyle={ {fontFamily: "Poppins-Regular"} } mode="contained-tonal" onPress={ ()=>{ Linking.openURL('https://flathub.org/apps/details/com.rafaelmardojai.Blanket')}} onLongPress={() => FlathubToClipboard()} icon={() => (<Image style={{height:18 , width: 18 , scaleX:1.5, scaleY:1.5}} source={require('../assets/image/png/flathub/flathub.png')} />)} >Flathub</Button>
      </View>
      <Text style={styles.blanttext}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet tellus aliquam, molestie lectus vitae, semper nisl. Aliquam at diam sit amet risus aliquet faucibus. Sed quis ultrices leo. Cras malesuada faucibus velit eu tempus. Nulla non ex diam. Donec gravida venenatis purus eget lobortis. Ut suscipit sollicitudin ultrices. Vivamus laoreet ipsum at convallis finibus. Nunc sodales varius nunc, 
       </Text>
+      <View style={styles.blanksoil}> 
+     <Button textColor={Color.C5} buttonColor={Color.C6} labelStyle={ {fontFamily: "Poppins-Regular", } } mode="contained-tonal" onPress={ ()=>{ Linking.openURL('https://github.com/rafaelmardojai/blanket')}} onLongPress={() => GithubToClipboard()} icon={() => (<Icon name="github-alt" style={{color:Color.C5}}  size={18} />)} >Github</Button>
+     <Button textColor={Color.C5} buttonColor={Color.C6} labelStyle={ {fontFamily: "Poppins-Regular"} } mode="contained-tonal" onPress={ ()=>{ Linking.openURL('https://flathub.org/apps/details/com.rafaelmardojai.Blanket')}} onLongPress={() => FlathubToClipboard()} icon={() => (<Image style={{height:18 , width: 18 , scaleX:1.5, scaleY:1.5}} source={require('../assets/image/png/flathub/flathub.png')} />)} >Flathub</Button>
+     </View>
      </View> 
     </>
   );
