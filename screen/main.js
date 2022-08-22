@@ -7,12 +7,15 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import {name as appName} from '../app.json';
 import Slider from '@react-native-community/slider';
 import styles from './css/main-css';
-import Color from '../assets/color/main-color'
+import { play } from '../backend/playbutton' ;
+import Color from '../assets/color/main-color' ;
+
+import { ra , sto , win , was , str , bir } from '../backend/playbutton';
 
 const main = ({navigation}) => {
 
   const _gotosetings = () => navigation.navigate("setting");
-
+  
   return (
     <>
     <View style={[styles.statusBar]}>
@@ -20,7 +23,7 @@ const main = ({navigation}) => {
     </View>
     
     <Appbar.Header style={styles.topbar}>
-        <Appbar.Content color={Color.C5} style={styles.text} title={appName} titleStyle={{ fontFamily: "Pacifico-Regular" ,  color:Color.C5 ,height:37 ,fontSize: 28, paddingTop:15 ,    }} />
+        <Appbar.Content color={Color.C5} style={styles.text} title={appName} titleStyle={{ fontFamily: "Pacifico-Regular" ,  color:Color.C5 ,height:37 ,fontSize: 28, paddingTop:15 , }} />
         <Appbar.Action color={Color.C5} icon={() => (<Octicons name="gear" size={23} />)} onPress={_gotosetings} />
       </Appbar.Header>
 
@@ -37,7 +40,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="cloud-showers-heavy"/>
        <View>
        <Text style={styles.card_text}>Rain</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4}  onValueChange={ra} />
        </View>
        </View> 
 
@@ -46,7 +49,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="poo-storm"/>
        <View>
        <Text  style={styles.card_text}>Storm</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={sto} />
        </View>
      </View> 
 
@@ -55,7 +58,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="wind"/>
        <View>
        <Text   style={styles.card_text}>Wind</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={win} />
        </View>
      </View> 
 
@@ -64,7 +67,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="water"/>
        <View>
        <Text style={styles.card_text}>Waves</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4}  onValueChange={was}/>
        </View>
      </View> 
 
@@ -73,7 +76,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="stream"/>
        <View>
        <Text style={styles.card_text}>Stream</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4}  onValueChange={str}/>
        </View>
      </View> 
 
@@ -82,7 +85,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="dove"/>
        <View>
        <Text style={styles.card_text}>Birds</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={bir}/>
        </View>
      </View> 
 
@@ -96,8 +99,6 @@ const main = ({navigation}) => {
      </View> 
     </View>
     </View>    
-
-    {/* row_2 */}
 
     <View style={styles.container}>
       <View style={styles.row1_box}>
@@ -199,11 +200,14 @@ const main = ({navigation}) => {
     </View>     
     </ScrollView> 
 
-    <FAB  icon={() => (<Icon5 name="play" size={22} />)}  style={styles.fab} onPress={() => console.log('Pressed')} />
+    <FAB  icon={() => (<Icon5 name="play" size={22} />)}  style={styles.fab} onPress={() => play()} />
 
     </>
   );
 };
+
+
+  
 
 
 

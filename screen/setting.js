@@ -9,15 +9,24 @@ import styles from './css/setting-css';
 import Color from '../assets/color/main-color'
 import Snackbar from 'react-native-snackbar';
 import Slider from '@react-native-community/slider';
+import SystemSetting from 'react-native-system-setting';
+
+
+
 
 const setting = ({navigation}) => {
-
-
+  state = {
+    volume: 0
+  }
+ 
   const [isSwitchOn, setIsSwitchOn] = React.useState(false);
 
   const onToggleSwitch = () => setIsSwitchOn(notworking);
   const notworking = () => {Snackbar.show({ text: 'its not working !!', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" }); Vibration.vibrate(100, 0, 100, 0);}
 
+    console.info( 'vol volmin ' + SystemSetting.getVolume().then())
+
+      
   //copy to Clipboard
   const FlathubToClipboard = () => {
     Clipboard.setString('https://flathub.org/apps/details/com.rafaelmardojai.Blanket');
@@ -44,7 +53,7 @@ const setting = ({navigation}) => {
 
       <View style={styles.card}>
        <Icon5  style={styles.iconv} size={27} name="volume-up"/>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={(Value) => SystemSetting.setVolume(Value)}/>
      </View>    
 
      <View style={styles.card_2}>

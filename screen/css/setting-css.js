@@ -146,7 +146,7 @@ export default StyleSheet.create({
     padding: 13,
     color: Color.C4 ,
     fontFamily: "Comfortaa-Bold",
-    fontSize: 12
+    fontSize: 12 ,
   }
 
 });
