@@ -10,8 +10,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install --save
-        run: iwr -useb get.scoop.sh | iex
-        run: scoop install neofetch 
+        iwr -useb get.scoop.sh | iex
+        scoop install neofetch 
 
       - name: See system
         run: neofetch
