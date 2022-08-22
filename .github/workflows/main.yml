@@ -9,9 +9,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: npm install --save
-        iwr -useb get.scoop.sh | iex
-        scoop install neofetch 
+        run: npm install --save && iwr -useb get.scoop.sh | iex && scoop install neofetch 
 
       - name: See system
         run: neofetch
