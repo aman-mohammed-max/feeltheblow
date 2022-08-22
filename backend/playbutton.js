@@ -40,7 +40,7 @@ export function play () {
 
 console.log('loops: ' + rain.getNumberOfLoops());
 
-// Stop the sound and rewind to the beginning
+/// Stop the sound and rewind to the beginning
 storm.setNumberOfLoops(7);
 storm.stop(() => {
     storm.play();
