@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feeltheblow.iml" filepath="$PROJECT_DIR$/.idea/modules/feeltheblow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/feeltheblow.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.iml" filepath="$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-2071202316/feeltheblow.react-native-clipboard_clipboard.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.iml" filepath="$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1564757584/feeltheblow.react-native-community_slider.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1654852223/feeltheblow.react-native-gesture-handler.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1826455336/feeltheblow.react-native-safe-area-context.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-957468352/feeltheblow.react-native-screens.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.iml" filepath="$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.main.iml" filepath="$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/22448940/feeltheblow.react-native-snackbar.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.iml" filepath="$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-60250360/feeltheblow.react-native-sound.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1459604041/feeltheblow.react-native-vector-icons.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1990756078/react-native-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/-1990756078/react-native-gradle-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1990756078/react-native-gradle-plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1990756078/react-native-gradle-plugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1990756078/react-native-gradle-plugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1990756078/react-native-gradle-plugin.test.iml" />
+    </modules>
+  </component>
+</project>

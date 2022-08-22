@@ -18,6 +18,8 @@ MERGED from [:react-native-snackbar] C:\Users\amanm\Projects\reactapp\feeltheblo
 MERGED from [com.facebook.react:react-native:0.69.3] C:\Users\amanm\.gradle\caches\transforms-3\4d14623c178ee14df80ae714f0df16d5\transformed\jetified-react-native-0.69.3-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\amanm\.gradle\caches\transforms-3\59db212543bf6847d500bc32383c75b1\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\amanm\.gradle\caches\transforms-3\3f83c266ccac6c7f2b518a076620525f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-sound] C:\Users\amanm\Projects\reactapp\feeltheblow\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:react-native-system-setting] C:\Users\amanm\Projects\reactapp\feeltheblow\node_modules\react-native-system-setting\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\amanm\.gradle\caches\transforms-3\60053108098adbf0ded5211077102c3b\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\amanm\.gradle\caches\transforms-3\106838d7e4adeaa0ac817d622974ff82\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.6.0] C:\Users\amanm\.gradle\caches\transforms-3\39cb9d65cbfc645ba1394b25db2d8eb7\transformed\jetified-fresco-2.6.0\AndroidManifest.xml:2:1-9:12
@@ -203,6 +205,10 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\aman
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\amanm\.gradle\caches\transforms-3\59db212543bf6847d500bc32383c75b1\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\amanm\.gradle\caches\transforms-3\3f83c266ccac6c7f2b518a076620525f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\amanm\.gradle\caches\transforms-3\3f83c266ccac6c7f2b518a076620525f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-sound] C:\Users\amanm\Projects\reactapp\feeltheblow\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-sound] C:\Users\amanm\Projects\reactapp\feeltheblow\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-system-setting] C:\Users\amanm\Projects\reactapp\feeltheblow\node_modules\react-native-system-setting\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-system-setting] C:\Users\amanm\Projects\reactapp\feeltheblow\node_modules\react-native-system-setting\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\amanm\.gradle\caches\transforms-3\60053108098adbf0ded5211077102c3b\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\amanm\.gradle\caches\transforms-3\60053108098adbf0ded5211077102c3b\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\amanm\.gradle\caches\transforms-3\106838d7e4adeaa0ac817d622974ff82\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:5:5-7:41

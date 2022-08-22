@@ -23,6 +23,10 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-snackbar
 import com.azendoo.reactnativesnackbar.SnackbarPackage;
+// react-native-sound
+import com.zmxv.RNSound.RNSoundPackage;
+// react-native-system-setting
+import com.ninty.system.setting.SystemSettingPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
 
@@ -76,6 +80,8 @@ public class PackageList {
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new SnackbarPackage(),
+      new RNSoundPackage(),
+      new SystemSettingPackage(),
       new VectorIconsPackage()
     ));
   }
