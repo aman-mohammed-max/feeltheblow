@@ -12,14 +12,9 @@ import Slider from '@react-native-community/slider';
 import SystemSetting from 'react-native-system-setting';
 
 
-
-
 const setting = ({navigation}) => {
-  state = {
-    volume: 0
-  }
- 
-  const [isSwitchOn, setIsSwitchOn] = React.useState(false);
+  
+  const [isSwitchOn, setIsSwitchOn] = React.useState(true);
 
   const onToggleSwitch = () => setIsSwitchOn(notworking);
   const notworking = () => {Snackbar.show({ text: 'its not working !!', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" }); Vibration.vibrate(100, 0, 100, 0);}

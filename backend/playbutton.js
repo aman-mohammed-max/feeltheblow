@@ -21,30 +21,45 @@ const all_sound = birds + boat + city + coffeeshop + fireplace + pinknoise + rai
 
 export function play () {
     birds.play();
-    // boat.play();
-    // city.play();
-    // coffeeshop.play();
-    // fireplace.play();
-    // pinknoise.play();
+    boat.play();
+    city.play();
+    coffeeshop.play();
+    fireplace.play();
+    pinknoise.play();
     rain.play();
     storm.play();
     stream.play();
-    // summernight.play();
-    // train.play();
+    summernight.play();
+    train.play();
     waves.play();
-    // whitenoise.play();
+    whitenoise.play();
     wind.play();
     console.log('played');
+    setvolm();
 }
 
+function setvolm () {
+    birds.setVolume(0);
+    boat.setVolume(0);
+    city.setVolume(0);
+    coffeeshop.setVolume(0);
+    fireplace.setVolume(0);
+    pinknoise.setVolume(0);
+    rain.setVolume(0);
+    storm.setVolume(0);
+    stream.setVolume(0);
+    summernight.setVolume(0);
+    train.setVolume(0);
+    waves.setVolume(0);
+    whitenoise.setVolume(0);
+    wind.setVolume(0);
+    console.log('volm set to what is sound');
+}
 
 console.log('loops: ' + rain.getNumberOfLoops());
 
 /// Stop the sound and rewind to the beginning
-storm.setNumberOfLoops(7);
-storm.stop(() => {
-    storm.play();
-});
+rain.setNumberOfLoops(-1);
 
 
 export function ra (ra) {
@@ -77,9 +92,44 @@ export function bir (bir) {
     console.info( 'vol birds ' + bir)
 }
 
-//  export function ra (ra) {
-//     waves.setVolume(ra);
-//     console.info( 'vol waves ' + ra)
-// }
+export function summ (summ) {
+    summernight.setVolume(summ);
+    console.info( 'vol summernight ' + summ)
+}
+
+export function tra (tra) {
+    train.setVolume(tra);
+    console.info( 'vol train ' + tra)
+}
+
+export function boa (boa) {
+    boat.setVolume(boa);
+    console.info( 'vol boat ' + boa)
+}
+
+export function cit (cit) {
+    city.setVolume(cit);
+    console.info( 'vol city ' + cit)
+}
+
+export function coff (coff) {
+    coffeeshop.setVolume(coff);
+    console.info( 'vol coffeeshop ' + coff)
+}
+
+export function fire (fire) {
+    fireplace.setVolume(fire);
+    console.info( 'vol fireplace ' + fire)
+}
+
+export function pink (pink) {
+    pinknoise.setVolume(pink);
+    console.info( 'vol pinknoise ' + pink)
+}
+
+export function whit (whit) {
+    whitenoise.setVolume(whit);
+    console.info( 'vol whitenoise ' + whit)
+}
 
 

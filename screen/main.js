@@ -7,10 +7,8 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import {name as appName} from '../app.json';
 import Slider from '@react-native-community/slider';
 import styles from './css/main-css';
-import { play } from '../backend/playbutton' ;
 import Color from '../assets/color/main-color' ;
-
-import { ra , sto , win , was , str , bir } from '../backend/playbutton';
+import { ra , sto , win , was , str , bir , summ , tra , boa , cit , play , coff, fire , pink , whit ,} from '../backend/playbutton';
 
 const main = ({navigation}) => {
 
@@ -94,7 +92,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="cloud-moon"/>
        <View>
        <Text style={styles.card_text}>Summer Night</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={summ} />
        </View>
      </View> 
     </View>
@@ -111,7 +109,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="train"/>
        <View>
        <Text style={styles.card_text}>Train</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={tra}/>
        </View>
        </View> 
 
@@ -120,7 +118,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="ship"/>
        <View>
        <Text  style={styles.card_text}>Boat</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={boa}/>
        </View>
      </View> 
 
@@ -129,7 +127,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="city"/>
        <View>
        <Text   style={styles.card_text}>City</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1}  minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={cit}/>
        </View>
      </View> 
     </View>
@@ -146,7 +144,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="mug-hot"/>
        <View>
        <Text style={styles.card_text}>Coffee Shop</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={coff}/>
        </View>
        </View> 
 
@@ -155,7 +153,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="fire-alt"/>
        <View>
        <Text  style={styles.card_text}>Fireplace</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={fire}/>
        </View>
      </View> 
     </View>
@@ -172,7 +170,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="align-center"/>
        <View>
        <Text style={styles.card_text}>Pink Noise</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={pink}/>
        </View>
        </View> 
 
@@ -181,7 +179,7 @@ const main = ({navigation}) => {
        <Icon5  style={styles.iconv} size={27} name="align-left"/>
        <View>
        <Text  style={styles.card_text}>White Noise</Text>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} />
+       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={whit}/>
        </View>
      </View> 
     </View>
