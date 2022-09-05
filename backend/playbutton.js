@@ -20,23 +20,24 @@ const wind = new Sound(audio_src.wind);
 const all_sound = birds + boat + city + coffeeshop + fireplace + pinknoise + rain + storm + stream + summernight + train + waves + whitenoise + wind;
 
 export function play () {
-    birds.play();
-    boat.play();
-    city.play();
-    coffeeshop.play();
-    fireplace.play();
-    pinknoise.play();
-    rain.play();
-    storm.play();
-    stream.play();
-    summernight.play();
-    train.play();
-    waves.play();
-    whitenoise.play();
-    wind.play();
+    birds.setNumberOfLoops(-1).play();
+    boat.setNumberOfLoops(-1).play();
+    city.setNumberOfLoops(-1).play();
+    coffeeshop.setNumberOfLoops(-1).play();
+    fireplace.setNumberOfLoops(-1).play();
+    pinknoise.setNumberOfLoops(-1).play();
+    rain.setNumberOfLoops(-1).play();
+    storm.setNumberOfLoops(-1).play();
+    stream.setNumberOfLoops(-1).play();
+    summernight.setNumberOfLoops(-1).play();
+    train.setNumberOfLoops(-1).play();
+    waves.setNumberOfLoops(-1).play();
+    whitenoise.setNumberOfLoops(-1).play();
+    wind.setNumberOfLoops(-1).play();
     console.log('played');
     setvolm();
 }
+
 
 function setvolm () {
     birds.setVolume(0);
@@ -55,12 +56,6 @@ function setvolm () {
     wind.setVolume(0);
     console.log('volm set to what is sound');
 }
-
-console.log('loops: ' + rain.getNumberOfLoops());
-
-/// Stop the sound and rewind to the beginning
-rain.setNumberOfLoops(-1);
-
 
 export function ra (ra) {
     rain.setVolume(ra);
@@ -131,5 +126,4 @@ export function whit (whit) {
     whitenoise.setVolume(whit);
     console.info( 'vol whitenoise ' + whit)
 }
-
 

@@ -17,16 +17,21 @@ const setting = ({navigation}) => {
   const [isSwitchOn, setIsSwitchOn] = React.useState(true);
 
   const onToggleSwitch = () => setIsSwitchOn(notworking);
-  const notworking = () => {Snackbar.show({ text: 'its not working !!', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" }); Vibration.vibrate(100, 0, 100, 0);}
+  const notworking = () => {Snackbar.show({ text: 'its not working !!', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" }); Vibration.vibrate(100, 0, 100, 0);};
 
-    console.info( 'vol volmin ' + SystemSetting.getVolume().then())
+    // var am ;
+    //  SystemSetting.getVolume().then((data)=> {
+    //    am = data ;  
+    //    console.info('hello')
+    //  })
 
-      
+    //  console.info(am)          
+    
   //copy to Clipboard
-  const FlathubToClipboard = () => {
+  function FlathubToClipboard() {
     Clipboard.setString('https://flathub.org/apps/details/com.rafaelmardojai.Blanket');
     Vibration.vibrate(20);
-    Snackbar.show({ text: 'Copy To Clipboard', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" });
+    Snackbar.show({ text: 'Copy To Clipboard', duration: Snackbar.LENGTH_SHORT, fontFamily: "Comfortaa-Bold" });
   }
 
   const GithubToClipboard = () => {
@@ -35,6 +40,7 @@ const setting = ({navigation}) => {
     Snackbar.show({ text: 'Copy To Clipboard', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold"});
   }
 
+  
   return (
     <>
     <View style={[styles.statusBar]}>
@@ -48,7 +54,7 @@ const setting = ({navigation}) => {
 
       <View style={styles.card}>
        <Icon5  style={styles.iconv} size={27} name="volume-up"/>
-       <Slider  style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} onValueChange={(Value) => SystemSetting.setVolume(Value)}/>
+         <Slider style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} value={0.8} onValueChange={(Value)=>SystemSetting.setVolume(Value)}/>     
      </View>    
 
      <View style={styles.card_2}>
@@ -82,6 +88,7 @@ const setting = ({navigation}) => {
     </>
   );
 };
+
 
 
 
