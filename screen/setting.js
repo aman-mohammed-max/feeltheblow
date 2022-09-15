@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Linking , Text, View, Image , Vibration ,} from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import {Appbar , Switch ,  TouchableRipple , Button ,} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Icon5 from 'react-native-vector-icons/FontAwesome5';
@@ -13,19 +14,16 @@ import SystemSetting from 'react-native-system-setting';
 
 
 const setting = ({navigation}) => {
-  
+
   const [isSwitchOn, setIsSwitchOn] = React.useState(true);
 
   const onToggleSwitch = () => setIsSwitchOn(notworking);
   const notworking = () => {Snackbar.show({ text: 'its not working !!', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" }); Vibration.vibrate(100, 0, 100, 0);};
 
-    // var am ;
-    //  SystemSetting.getVolume().then((data)=> {
-    //    am = data ;  
-    //    console.info('hello')
-    //  })
-
-    //  console.info(am)          
+  SystemSetting.getVolume().then((data)=> {
+    this.setState({volim: data})
+     console.info('hello')
+   })        
     
   //copy to Clipboard
   function FlathubToClipboard() {
@@ -49,7 +47,7 @@ const setting = ({navigation}) => {
     
     <Appbar.Header mode='center-aligned' style={styles.topbar}>
       <Appbar.Action  color={Color.C5} icon={() => (<Octicons name="chevron-left" style={styles.backbtn_icon} size={23} />)} style={styles.backbtn} onPress={() =>{ navigation.navigate("main");}} />
-     <Appbar.Content  style={styles.toptext} title="Settings" titleStyle={{ fontFamily: "Poppins-Bold",  color:Color.C5 ,height:35 ,fontSize: 28 ,paddingVertical:6 , marginTop:9 , marginLeft:3 }} /> 
+     <Appbar.Content  style={styles.toptext} title="Settings" titleStyle={{ fontFamily: "Poppins-Bold",  color:Color.C5 ,height:35 ,fontSize: RFPercentage(3.7) ,paddingVertical:6 , marginTop:9 , marginLeft:3 }} /> 
     </Appbar.Header>
 
       <View style={styles.card}>

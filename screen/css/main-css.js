@@ -1,5 +1,7 @@
 import Color from '../../assets/color/main-color';
-import {StyleSheet} from 'react-native'
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import {StyleSheet} from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 export default StyleSheet.create({
   statusBar: {
@@ -8,7 +10,7 @@ export default StyleSheet.create({
 
   topbar: {
     backgroundColor: Color.C3 ,
-    marginLeft: -40
+    marginLeft: wp(-11)
   },
 
   container: {
@@ -65,16 +67,15 @@ export default StyleSheet.create({
     marginHorizontal : 20 ,
     borderRadius: 12 ,
     marginBottom: 20 ,
-    backgroundColor: Color.C3,
   },
 
   add_card: {
-    backgroundColor: Color.C3,
     height: 40 ,
     borderRadius: 12 ,
     padding : 10 ,
     flexDirection : 'row' ,
     justifyContent : 'space-evenly',
+    backgroundColor: Color.C3
   },
 
   iconv: {
@@ -88,7 +89,7 @@ export default StyleSheet.create({
     margin: 16,
     right: 0,
     bottom: 0,
-    backgroundColor: Color.C4,
+    backgroundColor: Color.C6,
   },
 
 

@@ -1,7 +1,10 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View, } from 'react-native';
-import { Appbar ,  Divider , FAB  } from 'react-native-paper';
+import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View, Vibration} from 'react-native';
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import { Appbar ,  Divider , FAB ,  TouchableRipple } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Snackbar from 'react-native-snackbar';
 import Icon5 from 'react-native-vector-icons/FontAwesome5';
 import Octicons from 'react-native-vector-icons/Octicons';
 import {name as appName} from '../app.json';
@@ -21,7 +24,7 @@ const main = ({navigation}) => {
     </View>
     
     <Appbar.Header style={styles.topbar}>
-        <Appbar.Content color={Color.C5} style={styles.text} title={appName} titleStyle={{ fontFamily: "Pacifico-Regular" ,  color:Color.C5 ,height:37 ,fontSize: 28, paddingTop:15 , }} />
+        <Appbar.Content color={Color.C5} style={styles.text} title={appName} titleStyle={{ fontFamily: "Pacifico-Regular" ,  color:Color.C5 ,height:hp(4.5) ,fontSize: RFPercentage(4), paddingTop:hp(2) , }} />
         <Appbar.Action color={Color.C5} icon={() => (<Octicons name="gear" size={23} />)} onPress={_gotosetings} />
       </Appbar.Header>
 
@@ -186,19 +189,21 @@ const main = ({navigation}) => {
     </View>   
 
      <View style={styles.container}>
-      <View style={styles.row1_box}>
-      <Icon5  style={styles.icon_b} size={19} name="user-edit"/>
-      <Text style={{fontFamily: "Poppins-Bold", }}>Custom</Text>
-    </View>
-    <View style={styles.add}>
-      <View style={styles.add_card}>
-       <Icon5  style={styles.icon_add} size={17} name="plus"/>
-     </View> 
-    </View>
+        <View style={styles.row1_box}>
+          <Icon5  style={styles.icon_b} size={19} name="user-edit"/>
+          <Text style={{fontFamily: "Poppins-Bold", }}>Custom</Text>
+        </View>
+        <View style={styles.add}>
+          <TouchableRipple borderless={true} style={{borderRadius: 12 , }} onPress={() => {Snackbar.show({ text: 'it will release next version ', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" }); Vibration.vibrate(10);}} rippleColor="rgba(0, 0, 0, .32)">
+           <View style={styles.add_card}>
+            <Icon5  style={styles.icon_add} size={17} name="plus"/>
+           </View> 
+         </TouchableRipple>
+        </View>
     </View>     
     </ScrollView> 
 
-    <FAB  icon={() => (<Icon5 name="play" size={22} />)}  style={styles.fab} onPress={() => play()} />
+    <FAB  icon={() => (<Icon5 name="play" size={22} style={{marginHorizontal:wp(0.8), width:wp(5)}} />)} animated={false} style={styles.fab} onPress={() => play()} />
 
     </>
   );
