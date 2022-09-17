@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\amanm\\Projects\\reactapp\\feeltheblow\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
+            "outputFile": "com.feeltheblow.app-mergeDebugResources-27:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amanm\\.gradle\\caches\\transforms-3\\53122dfddfd0b682fe74c9823d5d0125\\transformed\\appcompat-1.4.1\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\amanm\\.gradle\\caches\\transforms-3\\f1000dedf2628644e4c873e9c0458d7a\\transformed\\appcompat-1.4.1\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -16,14 +16,14 @@
                     "to": {
                         "startLines": "10,11,12,16",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "755,830,917,1147",
+                        "startOffsets": "755,830,917,1097",
                         "endLines": "10,11,15,19",
                         "endColumns": "74,86,12,12",
-                        "endOffsets": "825,912,1142,1384"
+                        "endOffsets": "825,912,1092,1284"
                     }
                 },
                 {
-                    "source": "C:\\Users\\amanm\\.gradle\\caches\\transforms-3\\d66390e9f57cd03f4fe478c67b878d95\\transformed\\material-1.1.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\amanm\\.gradle\\caches\\transforms-3\\f595bb51195147e3bf37a03c6b5f7901\\transformed\\material-1.1.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

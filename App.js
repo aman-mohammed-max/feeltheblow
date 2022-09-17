@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
-import main from './screen/main';
-import setting from './screen/setting';
+import Main from './screen/Main';
+import Setting from './screen/Setting';
 import 'react-native-gesture-handler';
 import { createNativeStackNavigator} from '@react-navigation/native-stack';
 import Color from './assets/color/main-color'
@@ -21,9 +21,9 @@ const App = () => {
 
     return (
     <NavigationContainer theme={MyTheme}>
-      <Stack.Navigator initialRouteName='main'>
-         <Stack.Screen name='main' component={main} options={{ headerShown: false }}/>
-         <Stack.Screen name='setting' component={setting} options={{ headerShown: false }}/>
+      <Stack.Navigator initialRouteName='Main'>
+         <Stack.Screen name='Main' component={Main} options={{ headerShown: false }}/>
+         <Stack.Screen name='Setting' component={Setting} options={{ headerShown: false }}/>
       </Stack.Navigator>
     </NavigationContainer>   
  );

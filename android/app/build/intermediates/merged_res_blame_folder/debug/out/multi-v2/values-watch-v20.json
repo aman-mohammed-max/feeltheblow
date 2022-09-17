@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\amanm\\Projects\\reactapp\\feeltheblow\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "com.feeltheblow.app-mergeDebugResources-27:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amanm\\.gradle\\caches\\transforms-3\\53122dfddfd0b682fe74c9823d5d0125\\transformed\\appcompat-1.4.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\amanm\\.gradle\\caches\\transforms-3\\f1000dedf2628644e4c873e9c0458d7a\\transformed\\appcompat-1.4.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

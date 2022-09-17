@@ -13,9 +13,9 @@ import styles from './css/main-css';
 import Color from '../assets/color/main-color' ;
 import { ra , sto , win , was , str , bir , summ , tra , boa , cit , play , coff, fire , pink , whit ,} from '../backend/playbutton';
 
-const main = ({navigation}) => {
+const Main = ({navigation}) => {
 
-  const _gotosetings = () => navigation.navigate("setting");
+  const _gotosetings = () => navigation.navigate("Setting");
   
   return (
     <>
@@ -214,4 +214,4 @@ const main = ({navigation}) => {
 
 
 
-export default main;
+export default Main;

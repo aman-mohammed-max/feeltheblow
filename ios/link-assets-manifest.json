@@ -2,6 +2,14 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "assets/fonts/Bangers/Bangers-Regular.ttf",
+      "sha1": "9c81590199c778e14e4a7b0e9a7543288779a7ba"
+    },
+    {
+      "path": "assets/fonts/Bangers/OFL.txt",
+      "sha1": "a7ff81ea274d0f41da30be604c79c48da09c26d1"
+    },
+    {
       "path": "assets/fonts/Comfortaa/Comfortaa-Bold.ttf",
       "sha1": "030d538c445730fb1ec262b0e2bd748cdfceb272"
     },

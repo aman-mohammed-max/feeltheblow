@@ -2,6 +2,7 @@ import Color from '../../assets/color/main-color';
 import {StyleSheet ,  } from 'react-native'
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { heightPercentageToDP as hp ,  } from 'react-native-responsive-screen';
 export default StyleSheet.create({
     statusBar: {
         height: (getStatusBarHeight())
@@ -93,9 +94,8 @@ export default StyleSheet.create({
 
   card_4: {
     backgroundColor: Color.C3,
-    height: 380 ,
+    height: hp(47) ,
     marginHorizontal : 20 ,
-    marginBottom: 30 ,
     borderRadius: 12 ,
     padding : 16 ,
     paddingTop: 10 ,
@@ -128,7 +128,7 @@ export default StyleSheet.create({
     marginTop: 16,
     flexDirection : 'row' ,
     justifyContent : 'flex-start',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   blanksoil:{
