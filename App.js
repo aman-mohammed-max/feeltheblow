@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
-import Main from './screen/Main';
-import Setting from './screen/Setting';
+import Main from './screen/main';
+import Setting from './screen/setting';
 import 'react-native-gesture-handler';
 import { createNativeStackNavigator} from '@react-navigation/native-stack';
 import Color from './assets/color/main-color'
