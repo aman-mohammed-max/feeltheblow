@@ -1,4 +1,4 @@
-import React ,{ useState} from 'react';
+import React ,{ useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Linking , Text, View, Image , Vibration ,} from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
@@ -25,7 +25,25 @@ const Setting = ({navigation}) => {
   const onToggleSwitch = () => setIsSwitchOn(notworking);
   const notworking = () => {Snackbar.show({ text: 'its not working !!', duration: Snackbar.LENGTH_SHORT,fontFamily:"Comfortaa-Bold" }); Vibration.vibrate(100, 0, 100, 0); setIsSwitchOn(true)};
 
-    
+  const [vlm , setvlm ]  = useState(0);
+
+  const volumeListener = SystemSetting.addVolumeListener((data) => {
+  const v = data.value;
+  setvlm(v)
+});
+
+SystemSetting.getVolume().then((volume)=>{
+  setvlm(volume)
+})
+
+function getvlm (getvlm) {
+  SystemSetting.setVolume(getvlm);
+  SystemSetting.removeVolumeListener(volumeListener);
+};
+
+console.log(vlm);
+
+
   //copy to Clipboard
   function FlathubToClipboard() {
     Clipboard.setString('https://flathub.org/apps/details/com.rafaelmardojai.Blanket');
@@ -90,7 +108,7 @@ const Setting = ({navigation}) => {
 
       <View style={styles.card}>
        <Icon5  style={styles.iconv} size={27} name="volume-up"/>
-         <Slider style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} value={0.8} onValueChange={(Value)=>SystemSetting.setVolume(Value)}/>     
+         <Slider style={styles.volm} minimumValue={0} maximumValue={1} minimumTrackTintColor={Color.C5} maximumTrackTintColor={Color.C1} thumbTintColor={Color.C4} value={vlm} onValueChange={getvlm}/>     
      </View>    
 
      <View style={styles.card_2}>

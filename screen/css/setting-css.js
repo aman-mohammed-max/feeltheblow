@@ -125,14 +125,12 @@ export default StyleSheet.create({
   },
 
   blanoo: {
-    marginTop: 16,
     flexDirection : 'row' ,
     justifyContent : 'flex-start',
     alignItems: 'center',
   },
 
   blanksoil:{
-    marginTop: 17 ,
     flexDirection: 'row',
     justifyContent: 'space-around',
     width: '100%',
@@ -142,7 +140,6 @@ export default StyleSheet.create({
     // backgroundColor: Color.C6 ,
     borderRadius: 6 ,
     textAlign: 'center',
-    marginTop: 20,
     padding: 13,
     color: Color.C4 ,
     fontFamily: "Comfortaa-Bold",
